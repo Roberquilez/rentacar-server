@@ -3,51 +3,51 @@
 // NOTA: Estas funciones deben obtener los datos de la "BBDD" (data.js)
 //  después debe filtrarlos para cumplir lo que se solicita
 
-import { getAlumnos, addAlumno, getProfesores, addProfesor, getAsignaturas, addAsignatura } from './data.js'
+import { getVehiculos, addVehiculos, getClientes, addClientes, getAlquileres, addAlquileres } from './data.js'
 
-function getAlumnoById(idAlumno) {
+function getVehiculosById(idVehiculos) {
     // TODO
 }
 
-function getProfesorById(idProfesor) {
+function getClientesById(idProfesor) {
     // TODO
 }
 
-function getAsignaturaById(idAsignatura) {
+function getAlquileresById(idAlquieres) {
     // TODO
 }
 
 // Asignaturas que imparte un profesor
-function getAsignaturasByProfesorId(idProfesor) {
+function getAlquileressByClienteId(idCliente) {
     // TODO
 }
 
-// Asignaturas en las que está matriculado un alumno
-function getAsignaturasByAlumnoId(idAlumno) {
+
+function getVehiculoByClienteId(idCliente) {
     // TODO
 }
 
 export default {
-    alumnos: {
+    vehiculos: {
         get: {
-            all: getAlumnos,
-            byId: getAlumnoById
+            all: getVehiculos,
+            byId: getVehiculosById
         },
-        add: addAlumno
+        add: addVehiculos
     },
-    profesores: {
+    clientes: {
         get: {
-            all: getProfesores,
-            byId: getProfesorById
+            all: getClientes,
+            byId: getClientesById
         },
-        add: addProfesor
+        add: addClientes
     },
-    asignaturas: {
+    alquileres: {
         get: {
-            all: getAsignaturas,
-            byId: getAsignaturaById,
-            byProfesorid: getAsignaturasByProfesorId,
+            all: getAlquileres,
+            byId: getAlquileresById,
+            byClientesid: getAlquileresByClientesId,
         },
-        add: addAsignatura
+        add: addAlquileres
     }
 }

@@ -9,7 +9,7 @@ export function getVehiculos() {
     return data.vehiculos
 }
 
-export function addVehiculo(vehiculo) {
+export function addVehiculos(vehiculo) {
     // TODO
 }
 
@@ -17,7 +17,7 @@ export function getClientes() {
     return data.clientes
 }
 
-export function addAlquileres(alquileres) {
+export function addClientes(clientes) {
     // TODO
 }
 
@@ -25,6 +25,6 @@ export function getAlquileres() {
     return data.alquileres
 }
 
-export function addVehiculos(vehiculos) {
+export function addAlquileres(alquileres) {
     // TODO
 }
